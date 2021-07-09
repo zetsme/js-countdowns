@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+:root {
+  --main-color: #c7f9e9;
+  --secondary-color: #00209f;
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  background-color: #f9f9f9;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Cg fill='%2300f9ac' fill-opacity='0.1'%3E%3Cpath d='M12 0h18v6h6v6h6v18h-6v6h-6v6H12v-6H6v-6H0V12h6V6h6V0zm12 6h-6v6h-6v6H6v6h6v6h6v6h6v-6h6v-6h6v-6h-6v-6h-6V6zm-6 12h6v6h-6v-6zm24 24h6v6h-6v-6z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Fjalla One', sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+.container {
+  padding: 10px;
+  width: 600px;
+  max-width: 100%;
+}
+.date-container {
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 10px;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+input {
+  font-family: inherit;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+form > *:not(:last-child) {
+  margin-bottom: 1rem;
+}
+input {
+  padding: 0.5rem;
+  width: 50%;
+  border-radius: 5px;
+}
+.form-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.submit-btn {
+  display: block;
+  width: 50%;
+  max-width: 200px;
+  margin-left: auto;
+  background-color: var(--main-color);
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  padding: 0.5rem;
+}
+.countdowns-container {
+  margin: 2rem 0;
+}
+.countdowns-container > div:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 160px;
+  position: relative;
+  border-radius: 20px;
+  background-color: var(--main-color);
+  padding: 20px 40px;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.countdown ul {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+.countdown li {
+  margin: 0 1rem;
+  text-align: center;
+}
+.countdown span {
+  display: block;
+  font-size: 1.5rem;
+}
+.clear-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  padding: 0.5rem;
+  color: red;
+  border: 1px solid currentColor;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.complete-date {
+  color: var(--secondary-color);
+}

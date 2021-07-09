@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="date-container">
+      <h1>Enter your title for Countdown</h1>
+      <form id="timer-form">
+        <div class="form-control">
+          <label for="title-input">Enter your timer title</label>
+          <input type="text" id="title-input">
+        </div>
+        <div class="form-control">
+          <label for="datetime-input">Date and Time</label>
+          <input type="datetime-local" id='datetime-input'>
+        </div>
+        <button class="submit-btn" type="submit">Create Countdown</button>
+      </form>
+    </div>
+    <div class="countdowns-container" id="countdowns-container">
+    </div>
+  </div>
+</body>
+
+</html>
